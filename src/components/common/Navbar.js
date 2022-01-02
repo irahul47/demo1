@@ -22,11 +22,11 @@ const navigation = [
 const Navbar = () => {
   return (
     <nav>
-      <ul>
+      <ul className="flex my-10 sm:my-6">
         {console.log(navigation, "navigation")}
         {navigation.map((item) => {
           return (
-            <li key={item.name}>
+            <li key={item.name} className="px-4">
               <Link to={item.href}>{item.name}</Link>
             </li>
           );
